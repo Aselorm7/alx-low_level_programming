@@ -5,7 +5,7 @@
 /*betty style coding*/
 /**
  * main - Starting point
- * Return 0 (success)
+ * Return: 0 (success)
  */
 int main(void)
 {
