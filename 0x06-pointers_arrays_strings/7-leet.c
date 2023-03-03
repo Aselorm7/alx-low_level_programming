@@ -5,7 +5,7 @@
  * @str: string to be encoded
  * Return: A pointer to the encoded string
  */
-char *leet(char *)
+char *leet(char *str)
 {
 	int indx1 = 0, indx2;
 
@@ -13,11 +13,13 @@ char *leet(char *)
 
 	while (str[indx1])
 	{
-		for (indx2 = 0; indx2 <= 7; index2++)
+		for (indx2 = 0; indx2 <= 7; indx2++)
 		{
-			if (str[indx1] == leet[index2] ||
-				str[indx1] - 32 == leet[index2])
-				str[indx1] = index2 + '0';
+			if (str[indx1] == leet[indx2] ||
+				str[indx1] - 32 == leet[indx2])
+			{
+				str[indx1] = indx2 + '0';
+			}
 		}
 		indx1++;
 	}
